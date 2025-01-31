@@ -3,33 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Lab</title>
-    <link rel="shortcut icon" href="./c1-assets/cute-pet-small.png" type="image/x-icon">
-
-    <!-- google-font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
-
-    <!-- daisy+tailwind-cdn -->
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>  
- 
+<script src="https://cdn.tailwindcss.com"></script>
 
-     <!-- style -->
-     <style>
-        .font-adlam{
-  font-family: "ADLaM Display", serif;}        
-        .font-sora{  font-family: "Sora", serif;}
-
-        @media screen and (max-width:640px) {
+<style>
+     @media screen and (max-width:640px) {
             .none{display: none;}
             .border-extra{border-bottom-width:2px;}
         }
-
-     </style>
-
+</style>
 <script>
     tailwind.config = {
       theme: {
@@ -38,19 +21,16 @@
             clifford: '#da373d',
             'accent': '#FFDC26',
             'secondary': '#FFF9F4',
+            
           }
         }
       }
     }
   </script>
-
-
 </head>
-
 <body>
     <header>
-        <!-- responsive navbar -->
-        <nav  >
+        <nav class="h-28" >
             <div class="navbar bg-secondary border-extra ">
                 <div class="navbar-start md:pl-10 lg:pl-16">
                     <div class="flex items-center gap-4">
@@ -100,19 +80,45 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                               </svg>
                               
-                          </button> 
+                          </button>   
                           
-                    </div>                   
+                    </div>
+                    
                 
                 </div>
               </div>
 
         </nav>
-
     </header>
-    <main></main>
-    <footer></footer>
+
+    <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a>Homepage</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+
+     
+    
 </body>
+
 
 
 </html>
