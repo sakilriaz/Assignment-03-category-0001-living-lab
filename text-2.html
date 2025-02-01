@@ -41,6 +41,7 @@
             clifford: '#da373d',
             'brown': '#F9DF8A',
             'secondary': '#FFF9F4',
+            'accent': '#FFDC26',
           }
         }
       }
@@ -51,11 +52,109 @@
 </head>
 
 <body>
-    <header>
-   
-    </header>
+  <header>
+    <!-- responsive navbar -->
+    <nav  >
+        <div class="navbar bg-secondary border-extra mb-20">
+            <div class="navbar-start md:pl-10 lg:pl-16">
+                <div class="flex items-center gap-4">
+                    <img src="./c1-assets/logo-header.png" alt="">
+                    <p class="none overflow-hidden" >Browse<span class="text-accent">4</span>Pets</p>
+
+                </div>
+              
+            </div>
+            <div class="navbar-center none">
+
+               <ul class="menu menu-horizontal px-1 ">
+                  <li><a>Find a pet</a></li>
+                  <li><a>Breeds</a></li>      
+                  <li><a>Contact us</a></li>
+               </ul>
+            </div>
+            <div class="navbar-end md:8 lg:pr-16  ">
+                <div class="flex items-center   ">
+                   
+                        <button class="btn btn-ghost btn-circle none">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                              </svg>                      
+                          </button>
+                    
+                        <button class="btn btn-ghost btn-circle none">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-5 w-5"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                          </button>
+                        
+                            <button class="btn btn-outline btn-warning mr-2 none"><span class="text-black">Login</span></button>
+                      <button class="btn btn-outline btn-warning bg-[#FFDC26] none"><span class="text-black">Register</span></button> 
+
+                      <button class="sm:invisible">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                      </button> 
+                      
+                </div>                   
+            
+            </div>
+          </div>
+    </nav>
+
+    <!-- banner- pamper your pet -->
+    
+    <div class="mb-2 px-20 mxs sm:mx-6 md:mx-10 lg:mx-28 ">
+        <!-- text -->
+         <div class=" md:space-y-2 lg:space-y-3 z-10 relative ">
+            <h1 class="font-font-adlam text-text-black text-3xl md:text-4xl lg:text-5xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
+            <p class="text-font-sora text-sm">Discover a world of treats, toys, and essentials handpicked for <br>your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="py-2 px-4 bg-accent rounded-lg text-font-sora text-sm">Find a pet</button>
+
+        </div>
+           <!-- image -->
+         <div class="z-0 relative -top-16 sm:-top-24 md:-top-52 lg:-top-64 xl:-top-80">
+          <img class="w-full"  src="./c1-assets/cat-big.png" alt="">
+
+         </div>           
+     </div>
+</header>
+
     <main> 
-  
+      <section  class="max-w-screen-xl  pb-12 mb-20 mxs sm:mx-6 md:mx-10 lg:mx-28">
+        <div class="hero bg-secondary  ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img
+              src="./c1-assets/friend.jpg"
+              class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <h1 class="text-5xl font-bold">Pet is your Friend</h1>
+              <p class="py-6">
+                Pet animals are obedient and friendly to their master. They can play with them. They may alleviate our loneliness. There are lots of evidence that they endanger their life to save their master. It is really worth of having a pet.
+              </p>
+              <button class="btn  bg-accent">Read More</button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <div class="flex gap-4 my-2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+
+      </div>
     
     </main>
    
