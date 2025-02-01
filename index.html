@@ -26,7 +26,7 @@
         @media screen and (max-width:640px) {
             .none{display: none;}
             .border-extra{border-bottom-width:2px;}
-            
+            .mxs{margin-right: 20px;margin-left: 20px; }
         }
 
      </style>
@@ -113,7 +113,7 @@
 
         <!-- banner- pamper your pet -->
         
-        <div class="mb-2 px-20 ">
+        <div class="mb-2 px-20 mxs sm:mx-6 md:mx-10 lg:mx-28 ">
             <!-- text -->
              <div class=" md:space-y-2 lg:space-y-3 z-10 relative ">
                 <h1 class="font-font-adlam text-text-black text-3xl md:text-4xl lg:text-5xl">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
@@ -129,9 +129,10 @@
          </div>
     </header>
 
-    <main class="mx-auto">
+    <main  >     
+
        <!-- category section -->
-        <section class="max-w-screen-xl mb-20 mx-auto ">
+       <section class="max-w-screen-xl mb-20 mxs sm:mx-6 md:mx-10 lg:mx-28">
           <h2 class="font-adlam text-4xl mb-12">Browse By Categories</h2>
           <!-- cards -->
            <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6 ">
@@ -204,7 +205,7 @@
            <!-- trending pet products -->
      <section class=" bg-secondary  ">
          <!-- content div -->
-      <div class="max-w-screen-xl pb-12 mb-10 mx-auto">
+      <div class="max-w-screen-xl pb-12 mb-10 mxs sm:mx-6 md:mx-10 lg:mx-28">
 
         <h2 class="font-adlam text-3xl py-10">Trending Pet Products</h2>
     
@@ -408,7 +409,7 @@
      </section> 
      
       <!-- everyday low price section -->
-       <section class="max-w-screen-xl mb-20 mx-auto ">
+       <section class="max-w-screen-xl mb-20 mxs sm:mx-6 md:mx-10 lg:mx-28 ">
         <h3 class="text-adlam text-4xl font-semibold mb-6">Everyday low price </h3>
         <div class="md:flex gap-x-5 gap-y-5">
           <!-- card-1 -->
@@ -442,15 +443,65 @@
         </div>
        </section>
 
-       <!-- get pawsome news! section -->
-        <section>
-          
-        </section>
+       <!-- pawsome news section -->
+    <section class="max-w-screen-xl  mxs sm:mx-6 md:mx-10 lg:mx-28 bg-secondary rounded-xl z-10 relative lg:flex justify-around lg:z-10 lg:relative ">
+    <!-- image -->
+    <div class="p-10">
+       <img src="./c1-assets/cute-pet-mid.png" alt="">
+    </div>
+    <!-- text -->
+     <div class="pl-14 space-y-5 py-10 text-center lg:text-left my-auto" > 
+      <h3 class="text-adlam text-4xl">Get Pawsome News!</h3>
+     <p class="text-sora text-xl">Exclusive training tips, ticks, product deals and more.</p>
+     <p >
+      <input class="w-80 h-16" type="email" name="" placeholder="Enter email..." id="">
+     </p>
+     <button class="text-sora text-xl">Subscribe</button>
+     </div>
+    
 
-
+  </section>
 
     </main>
-    <footer></footer>
+
+     <!-- footer section -->
+  
+     <footer class=" text-sora  bg-brown py-10 px-4 z-0 relative -top-80 lg:px-10 lg:z-0 lg:relative lg:-top-60 mx-auto ">
+  
+      <div class=" max-w-screen-xl grid grid-cols-1  lg:grid-cols-3 gap-10 mx-auto lg:flex justify-between pt-96">
+        
+        <!-- col-1 -->
+         <div>
+          <div class="flex items-center gap-4 mb-6">
+            <img src="./c1-assets/logo-footer.png" alt="">
+            <h3 class="text-2xl ">Browse Pets</h3>
+          </div>
+          <p class="text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends </p>
+         </div>
+         
+         <!-- col-2 -->
+          <div class="text-xl text-start space-y-4 pt-4">
+            <p>Find a pet</p>
+            <p>Breeds</p>
+            <p>Contact us</p>
+          </div>
+
+           <!-- col-3 -->
+         <div class="text-lg text-left pt-12 ">
+          <p>Follow Us</p>
+          <div class="flex gap-4  my-2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+
+          </div>
+
+         </div>
+      </div>
+
+    </footer>
+
 </body>
 
 

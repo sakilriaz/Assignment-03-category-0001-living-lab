@@ -15,7 +15,8 @@
     <!-- daisy+tailwind-cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>  
- 
+     <!-- font-awesome link -->
+     <script src="https://kit.fontawesome.com/1d2d2cb24c.js" crossorigin="anonymous"></script>
 
      <!-- style -->
      <style>
@@ -23,9 +24,12 @@
   font-family: "ADLaM Display", serif;}        
         .font-sora{  font-family: "Sora", serif;}
 
-        @media screen and max-width {
-            
+        @media screen and (max-width:640px) {
+            .none{display: none;}
+            .border-extra{border-bottom-width:2px;}
+            .mxs{margin-right: 20px;margin-left: 20px; }
         }
+
      </style>
 
 
@@ -35,7 +39,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            clifford: '#da373d',
+            'brown': '#F9DF8A',
+            'secondary': '#FFF9F4',
           }
         }
       }
@@ -47,44 +52,16 @@
 
 <body>
     <header>
-      <div class="card lg:card-side ">
-        
-        <div class="card-body">
-          <h2 class="card-title">New album is released!</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
-          <div class="card-actions justify-start">
-            <button class="btn btn-primary">Listen</button>
-          </div>
-        </div>
-
-        <figure>
-          <img class="w-[25%]"
-            src="https://img.daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.webp"
-            alt="Album" />
-        </figure>
-      </div>
-        
-      </div>
+   
     </header>
     <main> 
-      <div class="hero bg-base-200 min-h-screen">
-        <div class="hero-content flex-col lg:flex-row">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Box Office News!</h1>
-            <p class="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
-        </div>
-      </div>
-      
+  
+    
     </main>
-    <footer></footer>
+   
+   
+    
+  
 </body>
 
 
